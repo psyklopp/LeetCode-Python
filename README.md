@@ -1,2 +1,4 @@
-# LeetCode-Python
-I should be solving stuff so that I get acquainted with Python in general
+# Learning Python in LeetCode
+
+**▶️ Why LeetCode**
+*  Because it keeps your brain up and running!
