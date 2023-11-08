@@ -48,3 +48,18 @@ Space complexity: O(1) - as we are not creating new data structures
 Time complexity: O(log n) - we are halving the input - which is log n, then in worst case 
 there are equal operations of subtracting 1 so.. log n + log n -> O(log n) 
 '''
+
+class Solution:
+    def numberOfSteps(self, num: int) -> int:
+        if num == 0:
+            return 0
+        return num.bit_length() + num.bit_count() - 1
+
+'''
+We need to remove all the ones in binary representations as well as shift one place
+hence we count the number of bits - the length and the number of 1's 
+We subtract one in the end because the we won't shift the 0 we get at the very last step.
+
+Space complexity: O(1)
+Time complexity: O(1) 
+'''
